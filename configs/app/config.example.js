@@ -10,7 +10,7 @@ var config = {
 	// If ability to log in is enabled.
 	loginEnabled: true,
 
-	managementUrl:"https://edumeet.example.com/mgmt",
+	managementUrl:"http://ms.nightowl.click/mgmt",
 
 	// The development server listening port.
 	developmentPort: 8000,
