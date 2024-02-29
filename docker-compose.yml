@@ -23,6 +23,8 @@ services:
     image: '${REPOSITORY}/${EDUMEET_SERVER}:${TAG}'
     links:
      - "edumeet-management-server:mgmt"
+    ports:
+      - '8443:8443'
   edumeet-client:
     env_file: .env
     volumes:
@@ -50,7 +52,7 @@ services:
       - '80:80'
       - '443:443'
       - '3002:3002'
-      - '8443:8443'
+#      - '8443:8443'
   edumeet-media-node:
     env_file: .env
     volumes:
